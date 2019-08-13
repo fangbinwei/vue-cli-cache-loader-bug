@@ -1,17 +1,27 @@
 <template>
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <fake></fake>
+    <HelloWorld :msg="test"/>
   </div>
 </template>
 
 <script>
 import HelloWorld from './components/HelloWorld.vue'
+import {test} from 'sleepwalker-fakezz'
 
 export default {
   name: 'app',
   components: {
     HelloWorld
+  },
+  data () {
+    return {
+      test: ''
+    }
+  },
+  mounted () {
+    this.test = test()
   }
 }
 </script>

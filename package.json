@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "core-js": "^3.1.2",
+    "sleepwalker-fakezz": "^1.0.0",
     "vue": "^2.6.10"
   },
   "devDependencies": {
